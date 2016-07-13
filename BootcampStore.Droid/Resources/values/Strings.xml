@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">BootcampStore.Droid</string>
+  
+  <!-- menu -->
+  <string name="menu_stores">Stores</string>
+  <string name="menu_promotions">Promotions</string>
+  <string name="menu_map">Map</string>
+  <string name="menu_logout">Logout</string>
+</resources>

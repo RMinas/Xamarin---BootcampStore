@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="Activityindicator" destination="6AE-qO-yJu" id="qhS-RE-vcq"/>
+                <outlet property="LoginBtn" destination="Y1D-KJ-GjM" id="nG9-ZD-l7e"/>
+                <outlet property="Password" destination="i6V-Xv-5WU" id="pik-1W-ldP"/>
+                <outlet property="Username" destination="t3K-yn-6HD" id="ulq-9x-e79"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3K-yn-6HD" userLabel="Username">
+                    <rect key="frame" x="69" y="66" width="470" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6V-Xv-5WU" userLabel="Password">
+                    <rect key="frame" x="69" y="119" width="470" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6AE-qO-yJu">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1D-KJ-GjM">
+                    <rect key="frame" x="69" y="200" width="466" height="30"/>
+                    <state key="normal" title="Login"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="t3K-yn-6HD" secondAttribute="trailing" constant="61" id="1MY-fF-J2l"/>
+                <constraint firstItem="Y1D-KJ-GjM" firstAttribute="top" secondItem="i6V-Xv-5WU" secondAttribute="bottom" constant="51" id="7vI-18-mJW"/>
+                <constraint firstItem="6AE-qO-yJu" firstAttribute="top" secondItem="Y1D-KJ-GjM" secondAttribute="bottom" constant="60" id="8Jk-ED-dSj"/>
+                <constraint firstItem="t3K-yn-6HD" firstAttribute="trailing" secondItem="i6V-Xv-5WU" secondAttribute="trailing" id="AyU-PD-RlI"/>
+                <constraint firstItem="t3K-yn-6HD" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="69" id="Ggv-f4-N6g"/>
+                <constraint firstItem="i6V-Xv-5WU" firstAttribute="leading" secondItem="Y1D-KJ-GjM" secondAttribute="leading" id="WOL-DG-1gm"/>
+                <constraint firstItem="i6V-Xv-5WU" firstAttribute="top" secondItem="t3K-yn-6HD" secondAttribute="bottom" constant="23" id="YtR-Z9-S1T"/>
+                <constraint firstAttribute="trailing" secondItem="Y1D-KJ-GjM" secondAttribute="trailing" constant="65" id="f9G-No-5Mx"/>
+                <constraint firstItem="6AE-qO-yJu" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="q56-vy-3r5"/>
+                <constraint firstItem="t3K-yn-6HD" firstAttribute="leading" secondItem="i6V-Xv-5WU" secondAttribute="leading" id="rFo-SE-CRf"/>
+                <constraint firstItem="6AE-qO-yJu" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="rao-gg-0uG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

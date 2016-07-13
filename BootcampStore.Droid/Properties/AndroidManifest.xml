@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="BootcampStore.Droid.BootcampStore.Droid" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="16" />
+  <application android:label="BootcampStore.Droid">
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAf7r6FTS--UvfeQRht5BY9hVyZsnytQy0"/>
+  </application>
+</manifest>

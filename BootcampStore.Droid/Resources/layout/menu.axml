@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <Button
+    android:text="@string/menu_stores"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="20"
+    local:MvxBind="Click ShowStoresCommand"/>
+  <Button
+    android:text="@string/menu_promotions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="20"
+    local:MvxBind="Click ShowPromotionsCommand"/>
+  <Button
+    android:text="@string/menu_map"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="20"
+    local:MvxBind="Click ShowStoresMapCommand"/>
+  <Button
+    android:text="@string/menu_logout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="20"
+    local:MvxBind="Click LogoutCommand"/>
+</LinearLayout>

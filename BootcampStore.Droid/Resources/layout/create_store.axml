@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="store name"
+    local:MvxBind="Text Name"/>
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="store address"
+    local:MvxBind="Text Address"/>
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="phone"
+    android:inputType="phone"
+    android:phoneNumber="true"
+    android:numeric="integer"
+    local:MvxBind="Text Phone"/>
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="photo url"
+    android:inputType="textUri"
+    local:MvxBind="Text PhotoUrl"/>
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Lat"/>
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Lng"/>
+  <ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    local:MvxBind="Visible IsBusy"/>
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Create Store"
+    local:MvxBind="Click CreateCommand; Enabled CreateCommand.CanExecute"/>
+</LinearLayout>

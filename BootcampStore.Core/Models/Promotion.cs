@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BootcampStore.Core.Models
+{
+    public class Promotion
+    {
+        public string Id { get; set; }
+        public string Product { get; set; }
+        public string StoreId { get; set; }
+        public int Discount { get; set; }
+    }
+}
